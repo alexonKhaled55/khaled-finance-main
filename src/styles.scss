@@ -1,0 +1,36 @@
+@import "./assets/color.scss";
+@import "./assets/font.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Public Sans", sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px !important;
+}
+.card_color {
+  width: 97%;
+  background-color: $stateColor;
+}
+.normal_text_color {
+  color: $normalText;
+}
+.active_text_color {
+  color: $textColor;
+}
+h1{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 120%;
+  
+  text-transform: capitalize;
+}
+.link_color{
+  color: $linkColor; 
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover{
+    color: $normalText;
+  }
+}

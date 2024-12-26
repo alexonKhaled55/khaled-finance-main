@@ -1,0 +1,8 @@
+@import "./../../../assets/color.scss";
+
+.activeCard{
+    background-color: $primaryColor;  
+    div *{
+        color: $secondColor !important;
+    }
+}

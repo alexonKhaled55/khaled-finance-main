@@ -1,0 +1,12 @@
+<div class="app-container grid gap-5 grid-cols-4">
+  <app-sidebar></app-sidebar>
+  <div class="body col-span-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<!-- 
+  this is have to add to the app-container class  
+  [style.gridTemplateColumns]="
+  (isMinimized$ | async)?.isMinimized ? '18rem auto' : '6rem auto'
+-->
